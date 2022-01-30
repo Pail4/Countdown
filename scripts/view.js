@@ -1,4 +1,5 @@
 import {time} from "./storage.js";
+import Cookies from 'js-cookie';
 export const UI = {
     INPUTS: {
         form: document.querySelector(".inputs-form"),
@@ -9,6 +10,12 @@ export const UI = {
         years: document.querySelector(".time-left-block__years"),
         days: document.querySelector(".time-left-block__days"),
         hours: document.querySelector(".time-left-block__hours"),
+    },
+    push() {
+        Cookies.set("lastTimeInput", this.INPUTS.input.value, {"max-age": "864000"});
+    },
+    get() {
+        this.INPUTS.input.value = Cookies.get("lastTimeInput") || "";
     },
     updateTime(){
         this.TIMES.years.textContent = time.years;

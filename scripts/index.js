@@ -4,6 +4,7 @@ import dayjs from 'dayjs'
 
 function diffTime(event){
     event.preventDefault();
+    UI.push();
     const currentDate = dayjs();
     let targetDate = dayjs(UI.INPUTS.input.value);
 
@@ -16,6 +17,7 @@ function diffTime(event){
 }
 
 window.onload = function (){
+    UI.get();
     UI.INPUTS.form.addEventListener("submit", diffTime);
     UI.INPUTS.input.min = dayjs().add(1, 'day').format("YYYY-MM-DD");
 }
