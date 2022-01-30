@@ -1,0 +1,65 @@
+@import "clear.css";
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, #E387FF, #fff);
+  padding: 100px;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Candara Light", "sans-serif";
+  font-size: 48px;
+  color: #d156f6;
+  border: 6px solid #E387FF;
+  border-radius: 30px;
+}
+
+.countdown > * {
+  padding: 15px 10px;
+}
+
+.inputs-form {
+  margin: 0 auto;
+}
+.inputs-form > * {
+  border: 6px solid #E387FF;
+  border-radius: 30px;
+  font-family: "Candara Light", "sans-serif";
+  font-size: 48px;
+  color: #c842f1;
+  padding: 5px;
+}
+
+.days-left-block {
+  text-align: center;
+}
+
+.time-left-block, .time-left-block > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-left-block__hours,
+.time-left-block__minutes,
+.time-left-block__seconds {
+  margin: 0 4px;
+  width: 70px;
+  height: 90px;
+  font-weight: bold;
+  border: 6px solid #E387FF;
+  border-radius: 30px;
+  border-radius: 20px;
+}
+
+footer {
+  font-family: "Candara Light", "sans-serif";
+  color: #E387FF;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+@import "clear.css";
+
+$BGBody: linear-gradient(to bottom right, #E387FF, #fff);
+@mixin BR{
+  border: 6px solid #E387FF;
+  border-radius: 30px;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  background: $BGBody;
+  padding: 100px;
+}
+* {
+}
+
+.countdown{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  font-family: "Candara Light", "sans-serif";
+  font-size: 48px;
+  color: #d156f6;
+
+  @include BR;
+}
+.countdown > *{
+  padding: 15px 10px;
+}
+
+
+.inputs-form{
+  margin: 0 auto;
+  > *{
+    @include BR;
+    font-family: "Candara Light", "sans-serif";
+    font-size: 48px;
+    color: #c842f1;
+    padding: 5px;
+  }
+}
+.inputs-form__line{
+
+}
+.inputs-form__button{
+
+}
+
+
+.days-left-block{
+  text-align: center;
+}
+
+.time-left-block, .time-left-block>*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-left-block__hours,
+.time-left-block__minutes,
+.time-left-block__seconds{
+  margin: 0 4px;
+  width: 70px;
+  height: 90px;
+
+  font-weight: bold;
+
+  @include BR;
+  border-radius: 20px;
+}
+
+footer {
+  font-family: "Candara Light", "sans-serif";
+  color: #E387FF;
+}
