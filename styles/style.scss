@@ -1,4 +1,5 @@
 @import "clear.css";
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 $BGBody: linear-gradient(to bottom right, #E387FF, #fff);
 @mixin BR{
@@ -51,7 +52,7 @@ body {
 }
 
 
-.days-left-block{
+.time-remain-block{
   text-align: center;
 }
 
@@ -60,12 +61,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.time-left-block__hours,
-.time-left-block__minutes,
-.time-left-block__seconds{
+.time-left-block__years,
+.time-left-block__days,
+.time-left-block__hours{
+  font-family: 'Londrina Outline', cursive;
   margin: 0 4px;
-  width: 70px;
-  height: 90px;
+  padding: 5px;
 
   font-weight: bold;
 

@@ -11,5 +11,12 @@
     "app"
   ],
   "author": "Pail4",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "dayjs": "^1.10.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
 }
