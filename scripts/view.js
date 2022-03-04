@@ -12,7 +12,7 @@ export const UI = {
         hours: document.querySelector(".time-left-block__hours"),
     },
     push() {
-        Cookies.set("lastTimeInput", this.INPUTS.input.value, {"max-age": "864000"});
+        Cookies.set("lastTimeInput", this.INPUTS.input.value, {expires: new Date(new Date().getTime() + 15 * 60 * 1000)});
     },
     get() {
         this.INPUTS.input.value = Cookies.get("lastTimeInput") || "";
